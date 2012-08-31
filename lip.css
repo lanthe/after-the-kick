@@ -54,9 +54,10 @@ div.product_title {
 }
 
 div.product_description {
-	font-size:14px;
-	font-family: Life Savers;
+	font-size: 14px;
+	font-family: Source Sans Pro;
 	height: 50px;
+	font-weight: 300;
 }
 
 a.buy_button {
@@ -95,7 +96,7 @@ div.content_area {
 div.tagline {
 	text-align:center;
 	width: 960px;
-    font-family: Life Savers;	
+	font-family: Source Sans Pro;
 	margin-bottom:42px;
 }
 
@@ -117,7 +118,7 @@ div.place_text {
 	display: inline-block;
 	margin-left:10px;
 	line-height: 350%;
-	font-family: Life Savers;
+	font-family: Source Sans Pro;
 }
 
 div.not_implemented_message {
@@ -142,7 +143,7 @@ div.header_link {
 	display: inline-block;
 	vertical-align: top;	
     color: #333;
-	font-family: Life Savers;
+	font-family: Source Sans Pro;
 
 }
 
@@ -161,7 +162,7 @@ a.footer_link {
 }
 
 a.footer_link {
-	font-family: Life Savers;
+	font-family: Source Sans Pro;
 }
 
 div.footer {
@@ -172,7 +173,7 @@ div.footer {
   margin-top: 10px;	
   padding: 20px;	
   text-align: center;
-  font-family: Life Savers;
+  font-family: Source Sans Pro;
 }
 
 

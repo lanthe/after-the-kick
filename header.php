@@ -9,6 +9,7 @@ Transitional//EN\">
 	<head>
 	    <link href='http://fonts.googleapis.com/css?family=Skranji' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Life+Savers' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700' rel='stylesheet' type='text/css'>
 	
 	    <title>".site_name()."</title>
 		<link rel='icon' 
