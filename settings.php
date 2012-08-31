@@ -6,6 +6,8 @@ function site_name() {
 			return "Indie Went Went";
 		case "afterthekick.com":
 			return "After the Kick";
+		case "kickfollower.com":
+				return "Kick Follower";
 		case "localhost":
 		default:
 			return "After the Kick";
