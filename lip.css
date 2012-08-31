@@ -4,7 +4,8 @@ a img {
 
 a.logo_text {
 	width: 960px;
-	height: 80px;
+	height: 35px;
+	margin-bottom:5px;
 	text-align: center;
 	display: inline-block;
 	font-size: 35px;
@@ -76,6 +77,13 @@ div.content_area {
 	border-radius: 4px;  /* TODO: need to add all the other browsers' taggies */
 	box-shadow: 0 0 4px #666;	
 	min-height: 250px;
+}
+
+div.tagline {
+	text-align:center;
+	width: 960px;
+    font-family: Life Savers;	
+	margin-bottom:42px;
 }
 
 div.header {
