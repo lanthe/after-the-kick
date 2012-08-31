@@ -7,14 +7,17 @@ include_once("footer.php");
 include_once("product_view.php");
 
 echo get_header();  
-echo product_view();
-echo product_view();
-echo product_view();
-echo product_view();
-echo product_view();
-echo product_view();
-echo product_view();
-echo product_view();
+$p = new Product("Sun","brad will love this one","$100");
+echo product_view($p);
+$p = new Product("Moon","i don't think brad will like this one at all","$9000.99");
+echo product_view($p);
+$p = new Product();
+echo product_view($p);
+echo product_view($p);
+echo product_view($p);
+echo product_view($p);
+echo product_view($p);
+
 
 ?>
 
