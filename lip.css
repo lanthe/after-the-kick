@@ -1,0 +1,230 @@
+a img {
+  border: none;
+}
+
+div.change_article_button_holder {
+	display:inline-block;
+	width: 70px;
+	height: 20px;
+}
+
+button.change_article_button {
+	width: 70px;
+	height: 23px;
+	margin-left: 10px;
+	display:none;
+}
+
+
+
+#change_language {
+	border-radius:2px;
+}
+
+div.overlay_go_button:hover {
+	background: #556B2F;
+	cursor: pointer;
+}
+
+div.overlay_go_button {
+	background: green;
+	width: 60px;
+	float: right;
+	padding: 4px;
+	color: white;
+	border-radius: 4px;
+	margin-right: 5px;
+	margin-top: 30px;
+}
+
+div.overlay {
+	padding: 20px;	
+	text-align:center;
+	display: none;
+	z-index: 1002;
+	outline: 0px;
+	top: 100px;
+	left: 440px;
+	position: absolute;
+	border-radius: 6px;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
+	background: white;
+}
+
+div.overlay_background {
+	z-index: 1001;
+	background: #666;
+	opacity: .40;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
+	display:none;
+}
+
+div.overlay_text {
+	padding: 10px;
+	margin: 10px;
+}
+
+/* CSS to make other sites render their HTML correctly */
+div.article-toolbar {
+	display:none;
+}
+
+a.logo_text {
+	width: 960px;
+	height: 80px;
+	text-align: center;
+	display: inline-block;
+	font-size: 35px;
+	color: #333;
+	text-decoration:none;
+	font-family: Skranji;
+}
+
+a.logo_text:hover {
+	cursor:pointer;
+}
+
+/* whole page */
+
+body {	
+  background-color:#E27;
+}
+
+div.center_column  {
+	margin: auto;
+	width: 980px;
+}
+
+div.product_area {
+	width: 266px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+div.product_img {
+	height: 250px;
+	width: 267px;
+	margin-bottom:2px;
+}
+
+div.product_title {
+	text-align: center;
+	margin-bottom: 2px;
+	font-width:222;
+	font-family: Skranji;
+}
+
+div.product_description {
+	font-size:14px;
+	font-family: Life Savers;
+}
+
+div.buy_button {
+	background-color: yellow;
+	height: 20px;
+	width: 50px;
+	float: right;
+	text-align: center;
+	padding: 1px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+	font-family: Skranji;
+}
+
+div.product_price {
+	display: inline-block;
+	font-family: Skranji;
+}
+
+div.not_implemented_message,
+/*div.wordlist,*/
+div.content_area {
+	padding: 20px;
+	background-color: white;
+	border-radius: 4px;  /* TODO: need to add all the other browsers' taggies */
+	box-shadow: 0 0 4px #666;	
+	min-height: 250px;
+}
+
+div.header {
+  height:75px;
+  margin-bottom: 20px;
+  width: 929px;
+  margin-left: 10px;
+  margin-top: 10px;	
+  padding-top: 2px;
+  padding-bottom: 0px;
+  padding-left: 11px;
+}	
+
+
+div.place_text {
+	/* width: 700px;*/
+	width:960px;
+	display: inline-block;
+	margin-left:10px;
+	line-height: 350%;
+	font-family: Life Savers;
+}
+
+/* header and footer */
+
+a.footer_link,
+a.header_link {
+	text-decoration: none;
+	font-size: 14px;
+}
+
+div.header_link {
+	margin-right: 20px;
+	margin-top: 10px;
+	float: right;
+	margin: 10px;
+	display: inline-block;
+	vertical-align: top;	
+    color: #333;
+	font-family: Life Savers;
+
+}
+
+.header_link:hover {
+	cursor:pointer;
+	background-color:#FFF;
+}
+
+.header_link:visited {
+	color: #333;
+}
+
+a.footer_link {
+	padding: 20px;
+	color: #333;
+}
+
+a.footer_link {
+	font-family: Life Savers;
+}
+
+div.footer {
+  height:75px;
+  margin-bottom: 20px;
+  width: 920px;
+  margin-left: 10px;
+  margin-top: 10px;	
+  padding: 20px;	
+  text-align: center;
+  font-family: Life Savers;
+}
+
+
+
+/* not-implemented.php */
+
+div.not_implemented_message {
+	margin-left:10px;
+	margin-top:10px;
+	width:920px;
+}
