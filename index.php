@@ -16,8 +16,11 @@ $p = new Product("My Alibi Bloomers","Wear these comfortable biking underwear be
 				"http://www.amazon.com/My-Alibi-Clothing-Bloomers-8-Pomegranate/dp/B007BO8AQO/ref=sr_1_1?s=apparel&ie=UTF8&qid=1346374873&sr=1-1",
 				 "http://www.myalibiclothing.com/wp-content/uploads/2010/03/bloomer_choc-front-crop.png");
 echo product_view($p);
-$p = new Product();
+$p = new Product("TikTok","It's a watch mount for your iPod Nano","$29.77",
+				"http://www.amazon.com/TikTok-Multi-Touch-Watch-Band-Black/dp/B004YTQ4WQ/ref=sr_1_1?s=electronics&ie=UTF8&qid=1346433243&sr=1-1&keywords=tiktok",
+				 "http://images.gizmag.com/hero/tiktok.jpg");
 echo product_view($p);
+$p = new Product();
 echo product_view($p);
 echo product_view($p);
 echo product_view($p);
