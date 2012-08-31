@@ -59,7 +59,7 @@ div.product_description {
 	height: 50px;
 }
 
-div.buy_button {
+a.buy_button {
 	background-color: yellow;
 	height: 20px;
 	width: 50px;
@@ -68,6 +68,13 @@ div.buy_button {
 	padding: 1px;
 	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
 	font-family: Skranji;
+	text-decoration: none;
+	color: black;
+}
+
+a.buy_button:hover {
+	cursor:pointer;
+	background-color: #cdcd00;
 }
 
 div.product_price {

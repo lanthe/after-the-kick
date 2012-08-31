@@ -8,7 +8,7 @@ function product_view($p) {
 			<div class='product_description'>".$p->description.".</div>
 			<br>
 			<div class='product_price'>".$p->price."</div>
-			<div class='buy_button'>BUY</div>
+			<a class='buy_button' href='".$p->url."'>BUY</a>
           </div>";
 }
 
