@@ -12,9 +12,9 @@ $p = new Product("INNA Jam","Delicious jams in lots of interesting flavors","$12
                  "http://innajam.com/products/singles",
                  "http://cdn.shopify.com/s/files/1/0044/7532/files/INNA-jam-12-up3.jpg?10");
 echo product_view($p);
-$p = new Product("My Alibi Bloomers","Wear these comfortable biking underwear beneath your normal clothing and ride to work happy!","$70",
+$p = new Product("My Alibi Bloomers","Wear these comfortable biking underwear beneath your normal clothing and ride to work happy :)","$70",
 				"http://www.amazon.com/My-Alibi-Clothing-Bloomers-8-Pomegranate/dp/B007BO8AQO/ref=sr_1_1?s=apparel&ie=UTF8&qid=1346374873&sr=1-1",
-				 "http://ecx.images-amazon.com/images/I/41D-tZkhjoL._AA115_.jpg");
+				 "http://www.myalibiclothing.com/wp-content/uploads/2010/03/bloomer_choc-front-crop.png");
 echo product_view($p);
 $p = new Product();
 echo product_view($p);

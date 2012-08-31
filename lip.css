@@ -54,6 +54,7 @@ div.product_title {
 div.product_description {
 	font-size:14px;
 	font-family: Life Savers;
+	height: 50px;
 }
 
 div.buy_button {
