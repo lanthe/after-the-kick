@@ -2,77 +2,6 @@ a img {
   border: none;
 }
 
-div.change_article_button_holder {
-	display:inline-block;
-	width: 70px;
-	height: 20px;
-}
-
-button.change_article_button {
-	width: 70px;
-	height: 23px;
-	margin-left: 10px;
-	display:none;
-}
-
-
-
-#change_language {
-	border-radius:2px;
-}
-
-div.overlay_go_button:hover {
-	background: #556B2F;
-	cursor: pointer;
-}
-
-div.overlay_go_button {
-	background: green;
-	width: 60px;
-	float: right;
-	padding: 4px;
-	color: white;
-	border-radius: 4px;
-	margin-right: 5px;
-	margin-top: 30px;
-}
-
-div.overlay {
-	padding: 20px;	
-	text-align:center;
-	display: none;
-	z-index: 1002;
-	outline: 0px;
-	top: 100px;
-	left: 440px;
-	position: absolute;
-	border-radius: 6px;
-	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
-	background: white;
-}
-
-div.overlay_background {
-	z-index: 1001;
-	background: #666;
-	opacity: .40;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;	
-	display:none;
-}
-
-div.overlay_text {
-	padding: 10px;
-	margin: 10px;
-}
-
-/* CSS to make other sites render their HTML correctly */
-div.article-toolbar {
-	display:none;
-}
-
 a.logo_text {
 	width: 960px;
 	height: 80px;
@@ -170,6 +99,12 @@ div.place_text {
 	font-family: Life Savers;
 }
 
+div.not_implemented_message {
+	margin-left:10px;
+	margin-top:10px;
+	width:920px;
+}
+
 /* header and footer */
 
 a.footer_link,
@@ -220,11 +155,3 @@ div.footer {
 }
 
 
-
-/* not-implemented.php */
-
-div.not_implemented_message {
-	margin-left:10px;
-	margin-top:10px;
-	width:920px;
-}
