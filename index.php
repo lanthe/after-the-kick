@@ -11,6 +11,23 @@ echo get_header();
 
 echo type_selector_view();
 
+$dbh = new PDO("sqlite:data/helloworld3.sqlite", null, null);
+
+$whereclause = '';
+if (isset($_REQUEST['t'])) {
+	$whereclause = 'WHERE type="'.mysql_escape_string($_REQUEST['t']).'"';
+}
+
+$stmt = $dbh->prepare("select * from products ".$whereclause.";");
+if ($stmt->execute(array())) {
+  while ($row = $stmt->fetch()) {
+  $p = new Product($row['name'], $row['description'], sprintf('$%.2f',$row['price']), $row['url'], $row['img_url']);  
+  echo product_view($p);
+
+//print_r($row);
+  }
+}
+
 $p = new Product("INNA Jam","Delicious jams in lots of interesting flavors","$12",
                  "http://innajam.com/products/singles",
                  "http://cdn.shopify.com/s/files/1/0044/7532/files/INNA-jam-12-up3.jpg?10");
