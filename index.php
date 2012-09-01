@@ -7,7 +7,7 @@ include_once("footer.php");
 include_once("product_view.php");
 
 echo get_header();  
-echo "<div class=tagline>Shop for crowdfunded creations</div>";
+
 $p = new Product("INNA Jam","Delicious jams in lots of interesting flavors","$12",
                  "http://innajam.com/products/singles",
                  "http://cdn.shopify.com/s/files/1/0044/7532/files/INNA-jam-12-up3.jpg?10");
