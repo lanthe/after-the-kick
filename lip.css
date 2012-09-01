@@ -91,6 +91,8 @@ div.content_area {
 	border-radius: 4px;  /* TODO: need to add all the other browsers' taggies */
 	box-shadow: 0 0 4px #666;	
 	min-height: 250px;
+	font-family: Source Sans Pro;
+	font-weight:400;
 }
 
 div.tagline {
@@ -180,9 +182,9 @@ div.type_selector_view {
 	margin-bottom:30px;
 }
 
-div.type_selector {
+a.type_selector {
 	display: inline-block;
-	width: 140px;
+	width: 118px;
 	font-family: Source Sans Pro;
 	font-size: 20px;
 	text-align: center;
@@ -193,10 +195,11 @@ div.type_selector {
 	border-color: #E27;
 	border-width: 2px;
 	border-radius: 4px;
-	
+	text-decoration: none;
+	color:black;
 }
 
-div.type_selector:hover {
+a.type_selector:hover {
   background-color: #E27;
   cursor: pointer;
 }
