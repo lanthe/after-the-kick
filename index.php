@@ -18,7 +18,7 @@ if (isset($_REQUEST['t'])) {
 	$whereclause = 'WHERE type="'.mysql_escape_string($_REQUEST['t']).'"';
 }
 
-$stmt = $dbh->prepare("select * from products ".$whereclause.";");
+$stmt = $dbh->prepare("select * from products ".$whereclause." order by coolness desc;");
 if ($stmt->execute(array())) {
   while ($row = $stmt->fetch()) {
   $p = new Product($row['name'], $row['description'], sprintf('$%.2f',$row['price']), $row['url'], $row['img_url']);  
