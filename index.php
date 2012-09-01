@@ -5,8 +5,11 @@ include_once("settings.php");
 include_once("header.php");
 include_once("footer.php");
 include_once("product_view.php");
+include_once("type_selector_view.php");
 
 echo get_header();  
+
+echo type_selector_view();
 
 $p = new Product("INNA Jam","Delicious jams in lots of interesting flavors","$12",
                  "http://innajam.com/products/singles",

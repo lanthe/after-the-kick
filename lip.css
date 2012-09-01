@@ -176,4 +176,27 @@ div.footer {
   font-family: Source Sans Pro;
 }
 
+div.type_selector_view {
+	margin-bottom:30px;
+}
 
+div.type_selector {
+	display: inline-block;
+	width: 140px;
+	font-family: Source Sans Pro;
+	font-size: 20px;
+	text-align: center;
+	background-color: white;
+	padding: 2px;
+	margin: 4px;
+	border: solid;
+	border-color: #E27;
+	border-width: 2px;
+	border-radius: 4px;
+	
+}
+
+div.type_selector:hover {
+  background-color: #E27;
+  cursor: pointer;
+}
