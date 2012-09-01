@@ -13,9 +13,9 @@ echo type_selector_view();
 
 $dbh = new PDO("sqlite:data/helloworld3.sqlite", null, null);
 
-$whereclause = '';
+$whereclause = 'where coolness <> "" and img_url <> "" ';
 if (isset($_REQUEST['t'])) {
-	$whereclause = 'WHERE type="'.mysql_escape_string($_REQUEST['t']).'"';
+	$whereclause .= 'and type="'.mysql_escape_string($_REQUEST['t']).'"';
 }
 
 $stmt = $dbh->prepare("select * from products ".$whereclause." order by coolness desc;");
