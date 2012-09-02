@@ -119,9 +119,19 @@ else
 $dbh = new PDO("sqlite:data/helloworld3.sqlite", null, null);
 
 $stmt =$dbh->prepare('select * from products where asin <> ""');
+
 if ($stmt->execute(array())) {
 	while ($row = $stmt->fetch()) {
+		
 		var_dump($row);
+		$pxml = aws_signed_request("com", array("Operation"=>"ItemLookup","ItemId"=>$row['ASIN'],"ResponseGroup"=>"Medium"), $public_key, $private_key);
+		$updatestmt =$dbh->prepare('update products set'.
+		                     ' price='.$pxml->Items->Item->ItemAttributes->ListPrice->FormattedPrice.
+		                     ' and img_url='.$pxml->Items->Item->LargeImage->URL.
+		                     ' and url='.$pxml->Items->Item->DetailPageURL.
+		                     ' where id='.$row["id"]);
+		$updatestmt->execute(array());
+		
 	}
 }
 
