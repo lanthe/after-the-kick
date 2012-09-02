@@ -4,7 +4,7 @@ require_once("private/aws.config");
 require_once("aws_signed_request.php");
  
 
-$pxml = aws_signed_request("com", array("Operation"=>"ItemLookup","ItemId"=>"B0079HJ2BK","ResponseGroup"=>"Medium"), $public_key, $private_key);
+$pxml = aws_signed_request("com", array("Operation"=>"ItemLookup","ItemId"=>"B007BO894M","ResponseGroup"=>"Medium"), $public_key, $private_key);
 if ($pxml === False)
 {
     echo "Did not work.\n";
