@@ -37,13 +37,24 @@ div.product_area {
 	margin-right: 20px;
 	margin-bottom: 20px;
 }
+
 div.product_img {
 	height: 250px;
-	width: 267px;
+	width: 267px;	
+	text-align:center;
+	border:solid;
+	border-color:white;
+}
+
+img.product_img {
+	max-height: 250px;
+	max-width: 267px;
 	margin-bottom:2px;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+}
+
+div.product_img:hover {
+	border:solid;
+	border-color:#e27;
 }
 
 div.product_title {

@@ -1,6 +1,6 @@
 <?php
 
-require_once("aws.config");
+require_once("private/aws.config");
 require_once("aws_signed_request.php");
  
 
