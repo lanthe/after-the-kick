@@ -19,7 +19,7 @@ Transitional//EN\">
 	    <link rel='stylesheet' type='text/css' href='flags.css'>	    
 	    <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.js'></script>
 	    <meta http-equiv='Content-Language' content='en_US' /> 
-		<script type="text/javascript">
+		<script type='text/javascript'>
 
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-34517669-1']);
