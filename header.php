@@ -23,7 +23,7 @@ Transitional//EN\">
 
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-33201912-1']);
-		  _gaq.push(['_setDomainName', 'languageinplace.com']);
+		  _gaq.push(['_setDomainName', 'kickfollower.com']);
 		  _gaq.push(['_setAllowLinker', true]);
 		  _gaq.push(['_trackPageview']);
 
@@ -48,7 +48,7 @@ Transitional//EN\">
 
     <div class='header'>
 		  <div class='header_link'><a class='header_link' href='about.php'>What?</a></div>
-    </div><a class='logo_text'href='\'>".site_name()."</a>".
+    </div><a class='logo_text'href='/'>".site_name()."</a>".
     "<div class=tagline>Shop for crowdfunded creations</div>";
 }
 ?>
