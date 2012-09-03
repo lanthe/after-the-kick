@@ -19,15 +19,13 @@ Transitional//EN\">
 	    <link rel='stylesheet' type='text/css' href='flags.css'>	    
 	    <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.js'></script>
 	    <meta http-equiv='Content-Language' content='en_US' /> 
-		<script type='text/javascript'>
+		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-33201912-1']);
+		  _gaq.push(['_setAccount', 'UA-34517669-1']);
 		  _gaq.push(['_setDomainName', 'kickfollower.com']);
 		  _gaq.push(['_setAllowLinker', true]);
 		  _gaq.push(['_trackPageview']);
-
-
 
 		  (function() {
 		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
