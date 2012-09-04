@@ -21,7 +21,7 @@ if (isset($_REQUEST['t'])) {
 $stmt = $dbh->prepare("select * from products ".$whereclause." order by coolness desc;");
 if ($stmt->execute(array())) {
   while ($row = $stmt->fetch()) {
-  $p = new Product($row['name'], $row['description'], sprintf('$%.2f',$row['price']), $row['url'], $row['img_url']);  
+  $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), $row['url'], $row['img_url']);  
   echo product_view($p);
   }
 }
@@ -31,6 +31,10 @@ if ($stmt->execute(array())) {
 <div class='overlay_background'></div>
 <script type='text/javascript'>
 
+function recordOutboundProductLink(action,product_id,href) {
+  _gaq.push(['_trackEvent', 'product_click', action, product_id]);
+  window.setTimeout("window.location.href='" + href + "'", 200);
+}
 
 
 $(document).ready(function() {
