@@ -23,7 +23,7 @@ Transitional//EN\">
 
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-34517669-1']);
-		  _gaq.push(['_setDomainName', 'kickfollower.com']);
+		  _gaq.push(['_setDomainName', '$_SERVER['SERVER_NAME']']);
 		  _gaq.push(['_setAllowLinker', true]);
 		  _gaq.push(['_trackPageview']);
 
