@@ -15,8 +15,9 @@ try {
 			var_dump($row);
 			$pxml = aws_signed_request("com", array("Operation"=>"ItemLookup","ItemId"=>$row['ASIN'],"ResponseGroup"=>"Medium"), $public_key, $private_key);
 			$price = $pxml->Items->Item->ItemAttributes->ListPrice->Amount / 100.00;
-			if($price == 0)
+			if($price == 0) {
 			  	$price = $pxml->Items->Item->OfferSummary->LowestNewPrice->Amount / 100.00;
+			}
 			
 			$updatestmt =$dbh->prepare('update products set'.
 		                     ' price='.$price.
