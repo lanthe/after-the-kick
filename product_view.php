@@ -8,7 +8,7 @@ function product_view($p) {
 			<div class='product_description'>".$p->description."</div>
 			<br>
 			<div class='product_price'>".$p->price."</div>
-			<a class='buy_button' href='javascript:void(0)' onclick='recordOutboundProductLink(\"buy_button\",$p->id,\"$p->url\")'>BUY</a>
+			<a class='buy_button' href='javascript:void(0)' onclick='recordOutboundProductLink(\"buy_button\",$p->id,\"$p->url\")'>GO</a>
           </div>";
 }
 
