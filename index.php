@@ -32,8 +32,7 @@ if ($stmt->execute(array())) {
 <script type='text/javascript'>
 
 function recordOutboundProductLink(action,product_id,href) {
-  _gaq.push(['_trackEvent', 'product_click', action, 'lanthe', product_id]);
-  console.log("sent google analytics event with " + action + product_id);
+  _gaq.push(['_trackEvent', 'product_click', action, href, product_id]);
   window.setTimeout("window.location.href='" + href + "'", 600);
 }
 
