@@ -25,7 +25,9 @@ if ($stmt->execute(array())) {
   echo product_view($p);
   }
 }
-
+echo '<div class="thats_all_folks">
+       <p class="kf_normal">That\'s all we\'ve got!  Want to see more?  <a href="/mailinglist.php">keep in touch</a></p>
+      </div>';
 ?>
 
 <div class='overlay_background'></div>

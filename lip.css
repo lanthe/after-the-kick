@@ -214,3 +214,20 @@ a.type_selector:hover {
   background-color: #E27;
   cursor: pointer;
 }
+
+.kf_header {
+	font-family: Skranji;
+	font-size: 20px;
+}
+
+.kf_normal {
+	font-family: Source Sans Pro;
+	font-size:16px;	
+}	
+
+.thats_all_folks {
+	width:100%;
+	text-align:center;
+	margin-top:100px;
+	margin-bottom:50px;
+}
