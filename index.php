@@ -33,7 +33,7 @@ if ($stmt->execute(array())) {
 
 function recordOutboundProductLink(action,product_id,href) {
   _gaq.push(['_trackEvent', 'product_click', action, href, product_id]);
-  window.setTimeout("window.location.href='" + href + "'", 600);
+  window.setTimeout(window.open(href), 600);
 }
 
 
