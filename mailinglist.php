@@ -14,7 +14,8 @@ echo '
 	<input type="email" value="" name="EMAIL" class="email kf_normal" id="mce-EMAIL" placeholder="email address" required>
 	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button kf_normal"></div><br>
 	
-	<p class="kf_normal">Or, follow us on twitter at @kickfollower</p>
+	<p class="kf_normal">Or, follow us on twitter: &nbsp<a href="https://twitter.com/kickfollower" class="twitter-follow-button" data-show-count="false">Follow @kickfollower</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
 
 </form>
 </div>';
