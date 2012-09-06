@@ -11,23 +11,28 @@ try {
 
 	if ($stmt->execute(array())) {
 		while ($row = $stmt->fetch()) {
-		
-			var_dump($row);
 			$pxml = aws_signed_request("com", array("Operation"=>"ItemLookup","ItemId"=>$row['ASIN'],"ResponseGroup"=>"Medium"), $public_key, $private_key);
-			$price = $pxml->Items->Item->ItemAttributes->ListPrice->Amount / 100.00;
-			if($price == 0) {
-			  	$price = $pxml->Items->Item->OfferSummary->LowestNewPrice->Amount / 100.00;
+			if ($pxml == null) {   //we're not sure why these sometimes fail
+			  echo $row['id']." failed \n";
 			}
+			else {
+				$price = $pxml->Items->Item->ItemAttributes->ListPrice->Amount / 100.00;
+				if($price == 0) {
+				  	$price = $pxml->Items->Item->OfferSummary->LowestNewPrice->Amount / 100.00;
+				}
 			
-			$updatestmt =$dbh->prepare('update products set'.
-		                     ' price='.$price.
-		                     ',img_url="'.$pxml->Items->Item->LargeImage->URL.
-		                     '",url="'.$pxml->Items->Item->DetailPageURL.
-		                     '" where id='.$row["id"]);
-			var_dump($updatestmt);
-			$updatestmt->execute(array());
+				$updatestmt =$dbh->prepare('update products set'.
+			                     ' price='.$price.
+			                     ',img_url="'.$pxml->Items->Item->LargeImage->URL.
+			                     '",url="'.$pxml->Items->Item->DetailPageURL.
+			                     '" where id='.$row["id"]);
+				var_dump($updatestmt);
+				$updatestmt->execute(array());
+			}
+			usleep(2000000);
 		
 		}
+		
 	}
 } catch (Exception $e) {
   $dbh->rollBack();

@@ -78,6 +78,8 @@ function aws_signed_request($region, $params, $public_key, $private_key)
  
     if ($response === False)
     {
+	    echo $request."\n";
+	    echo "response is false: ".$response;
         return False;
     }
     else
@@ -86,6 +88,8 @@ function aws_signed_request($region, $params, $public_key, $private_key)
         $pxml = simplexml_load_string($response);
         if ($pxml === False)
         {
+	        echo $response."\n";
+	        echo "parsing failed";
             return False; // no xml
         }
         else
