@@ -47,6 +47,6 @@ Transitional//EN\">
     <div class='header'>
 		  <div class='header_link'><a class='header_link' href='about.php'>What?</a></div>
     </div><a class='logo_text'href='/'>".site_name()."</a>".
-    "<div class=tagline>Kickstarter projects that are finished and available in stores</div>";
+    "<div class=tagline>Crowd-funded projects that are built and available in stores</div>";
 }
 ?>
