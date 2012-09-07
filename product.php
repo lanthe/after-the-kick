@@ -8,10 +8,11 @@ class Product
   public $url;
   public $img;
   public $id;
+  public $ks_price;
   
 
   public function __construct($id=0,$name = "Gizmo", $description = "Funded elsewhere, now available here", 
-                              $price = "$9.99", $url = "google.com", 
+                              $price = "$9.99", $ks_price = '$9.99', $url = "google.com", 
                               $img = "http://curious.astro.cornell.edu/images/xraysun.gif")
   {
     $this->name = $name;
@@ -20,6 +21,7 @@ class Product
     $this->url = $url;
     $this->img = $img;
     $this->id = $id;
+    $this->ks_price = $ks_price;
   }
 }
 ?>
