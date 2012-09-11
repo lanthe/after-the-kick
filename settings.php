@@ -7,7 +7,7 @@ function site_name() {
 		case "afterthekick.com":
 			return "After the Kick";
 		case "kickfollower.com":
-			return "Kick Follower";
+			return "Kickfollower";
 		case "outiegogo.com":
 			return "Outie Go Go";
 		case "localhost":
