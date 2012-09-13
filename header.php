@@ -45,6 +45,7 @@ Transitional//EN\">
     <div class='center_column'>
 
     <div class='header'>
+	      <div class='header_link'><a class='header_link' href='suggest.php'>Suggest a product</a></div>
 		  <div class='header_link'><a class='header_link' href='about.php'>What?</a></div>
 		  <div class='header_link'><a class='header_link' href='/blog/'>Blog</a></div>
     </div><a class='logo_text'href='/'>".site_name()."</a>".
