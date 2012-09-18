@@ -21,7 +21,12 @@ if (isset($_REQUEST['t'])) {
 $stmt = $dbh->prepare("select * from products ".$whereclause." order by coolness desc;");
 if ($stmt->execute(array())) {
   while ($row = $stmt->fetch()) {
-  $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), sprintf('$%.2f',$row['ks_price']), $row['url'], $row['img_url']);  
+  if($row['ASIN'] != "")
+    $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), sprintf('$%.2f',$row['ks_price']), $row['url'], $row['img_url'], true);
+  else
+    $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), sprintf('$%.2f',$row['ks_price']), $row['url'], $row['img_url'], false);
+      
+
   echo product_view($p);
   }
 }

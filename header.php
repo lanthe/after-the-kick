@@ -15,7 +15,7 @@ Transitional//EN\">
 		<link rel='icon' 
 		      type='image/png' 
 		      href='imgs/favicon.ico'>
-	    <link rel='stylesheet' type='text/css' href='lip.css'>
+	    <link rel='stylesheet' type='text/css' href='lip1.css'>
 	    <link rel='stylesheet' type='text/css' href='flags.css'>	    
 	    <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.js'></script>
 	    <meta http-equiv='Content-Language' content='en_US' /> 
