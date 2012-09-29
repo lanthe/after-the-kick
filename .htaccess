@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	RewriteRule ^about/?$ /about.php [QSA,L]
+	RewriteRule ^suggest/?$ /suggest.php [QSA,L]
+	RewriteRule ^mailinglist/?$ /mailinglist.php [QSA,L]
+	RewriteRule ^details/?$ /details.php [QSA,L]
+</IfModule>

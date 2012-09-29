@@ -15,7 +15,7 @@ Transitional//EN\">
 		<link rel='icon' 
 		      type='image/png' 
 		      href='imgs/favicon.ico'>
-	    <link rel='stylesheet' type='text/css' href='lip1.css'>
+	    <link rel='stylesheet' type='text/css' href='/lip1.css'>
 	    <link rel='stylesheet' type='text/css' href='flags.css'>	    
 	    <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.js'></script>
 	    <meta http-equiv='Content-Language' content='en_US' /> 
@@ -45,8 +45,8 @@ Transitional//EN\">
     <div class='center_column'>
 
     <div class='header'>
-	      <div class='header_link'><a class='header_link' href='suggest.php'>Suggest a product</a></div>
-		  <div class='header_link'><a class='header_link' href='about.php'>What?</a></div>
+	      <div class='header_link'><a class='header_link' href='/suggest/'>Suggest a product</a></div>
+		  <div class='header_link'><a class='header_link' href='/about/'>What?</a></div>
 		  <div class='header_link'><a class='header_link' href='/blog/'>Blog</a></div>
     </div><a class='logo_text'href='/'>".site_name()."</a>".
     "<div class=tagline>Crowd-funded projects that are built and available in stores</div>";

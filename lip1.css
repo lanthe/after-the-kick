@@ -52,6 +52,22 @@ div.product_area {
 	margin-bottom: 20px;
 }
 
+div.reviews_area {
+	width: 580px;
+	display:inline-block;
+	margin-right:20px;
+	vertical-align:top;
+}
+
+div.review {
+	margin-bottom:5px;
+}
+
+span.author {
+	font-weight:500;
+	font-family: Source Sans Pro;
+}
+
 div.product_img {
 	height: 250px;
 	width: 267px;	
@@ -74,8 +90,6 @@ div.product_img:hover {
 div.product_title {
 	text-align: center;
 	margin-bottom: 2px;
-	font-width:222;
-	font-family: Skranji;
 }
 
 div.product_description {
@@ -161,6 +175,8 @@ a.footer_link,
 a.header_link {
 	text-decoration: none;
 	font-size: 14px;
+	color: #333;
+    
 }
 
 div.header_link {
@@ -232,12 +248,13 @@ a.type_selector:hover {
 
 .kf_header {
 	font-family: Skranji;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .kf_normal {
 	font-family: Source Sans Pro;
 	font-size:16px;	
+	font-weight:300;
 }	
 
 .thats_all_folks {
