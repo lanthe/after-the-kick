@@ -11,16 +11,19 @@ echo get_header();
 
 //  DB Access
 
+$uri = $_SERVER['REQUEST_URI'];
+$uri = split("/",$uri);
+$name = $uri[2];
 $dbh = new PDO("sqlite:data/helloworld3.sqlite", null, null);
 
-$whereclause = 'where id='.$_REQUEST['id'];
+$whereclause = 'where name=\''.$name.'\'';
 $stmt = $dbh->prepare("select * from products ".$whereclause);
 if ($stmt->execute(array())) {
   $row = $stmt->fetch();
   $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), sprintf('$%.2f',$row['ks_price']), $row['url'], $row['img_url'], true);
 }
 
-$stmt = $dbh->prepare("select * from reviews where product_id=".$_REQUEST['id']);
+$stmt = $dbh->prepare("select * from reviews where product_id=".$p->id);
 $reviews = array();
 
 if($stmt->execute(array())) {
