@@ -13,10 +13,10 @@ echo get_header();
 
 $uri = $_SERVER['REQUEST_URI'];
 $uri = split("/",$uri);
-$name = $uri[2];
+$details_url = $uri[2];
 $dbh = new PDO("sqlite:data/helloworld3.sqlite", null, null);
 
-$whereclause = 'where name=\''.$name.'\'';
+$whereclause = 'where details_url=\''.$details_url.'\'';
 $stmt = $dbh->prepare("select * from products ".$whereclause);
 if ($stmt->execute(array())) {
   $row = $stmt->fetch();
