@@ -35,25 +35,35 @@ if($stmt->execute(array())) {
 
 // UI
 
-echo "<div class='content_area product_area'>
-			<div class='product_title kf_header'>".$p->name."</div>
-			<div class='product_img'><a href='javascript:void(0)' onclick='recordOutboundProductLink(\"product_img\",$p->id,\"$p->url\")'><img class='product_img' src=$p->img></img></a></div>
-			<div class='product_description'>".$p->description."</div>
-			<br>
-			<div class='deal_text'><div class='ks_price'>$p->ks_price</div> on Kickstarter</div>
-			<div class='product_price'>".$p->price."</div><div class='website'> via ".$p->website."</div>
-			<a class='buy_button' href='javascript:void(0)' onclick='recordOutboundProductLink(\"buy_button\",$p->id,\"$p->url\")'>GO</a>
-          </div>";
-
-echo "<div class='content_area reviews_area'>";
-echo "<div class='kf_header'>Kickstarter User Comments</div>";
-foreach ($reviews as $r) {
-    echo "<div class='review'>";
-	echo "<span class='author kf_normal'>".$r->author.": </span>";
-	echo "<span class='kf_normal'>".$r->text."</span>";
-	echo "</div>";
-}
+echo "<div class='content_area'>
+        <div class='details_product_img'><img class='details_product_img' src=$p->img></img></div>
+        <div class='details_product_info'>
+          <div class='details_product_name kf_header'>".$p->name."</div>
+		  <div class='deal_text'><div class='ks_price'>$p->ks_price</div> on Kickstarter</div>
+		  <div class='product_price'>".$p->price."</div><div class='website'> via ".$p->website."</div>
+		  <a class='buy_button' href='javascript:void(0)' onclick='recordOutboundProductLink(\"buy_button\",$p->id,\"$p->url\")'>GO</a>
+        </div>
+        <div class='details_reviews_area'>
+			<div class='kf_header'>Kickstarter User Comments</div>";
+			foreach ($reviews as $r) {
+			    echo "<div class='review'>";
+				echo "<span class='author kf_normal'>".$r->author.": </span>";
+				echo "<span class='kf_normal'>".$r->text."</span>";
+				echo "</div>";
+			}
+	  echo "</div>";
 echo "</div>";
 // end
+echo "<script type='text/javascript'>
 
+function recordOutboundProductLink(action,product_id,href) {
+  _gaq.push(['_trackEvent', 'product_click', action, href, product_id]);
+  window.setTimeout(window.open(href), 600);
+}
+
+
+$(document).ready(function() {
+
+});
+</script>";
 echo get_footer();  ?>

@@ -52,11 +52,11 @@ div.product_area {
 	margin-bottom: 20px;
 }
 
-div.reviews_area {
-	width: 580px;
+div.details_reviews_area {
 	display:inline-block;
 	margin-right:20px;
 	vertical-align:top;
+	margin-left:10px;
 }
 
 div.review {
@@ -68,12 +68,36 @@ span.author {
 	font-family: Source Sans Pro;
 }
 
+div.details_product_name {
+	text-align:left;
+}
+
+div.details_product_info {
+	vertical-align:top;
+	width: 500px;
+	display:inline-block;
+	text-align: left;
+}
+
+
+div.product_img,
 div.product_img {
 	height: 250px;
 	width: 267px;	
 	text-align:center;
 	border:solid;
 	border-color:white;
+}
+
+.details_product_img {
+	display:inline-block;
+	height: 300px;
+	width: 345px;
+	text-align:center;
+	border:solid;
+	border-color:white;
+	margin-right:10px;
+	margin-bottom:18px;
 }
 
 img.product_img {
@@ -251,7 +275,6 @@ a.type_selector:hover {
 }
 
 .kf_normal {
-	font-family: Source Sans Pro;
 	font-size:16px;	
 	font-weight:300;
 }	
