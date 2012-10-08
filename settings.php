@@ -12,7 +12,7 @@ function site_name() {
 			return "Outie Go Go";
 		case "localhost":
 		default:
-			return "After the Kick";
+			return "Kickfollower";
 	}
 }
 ?>

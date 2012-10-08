@@ -1,5 +1,5 @@
 <?php
-include_once("product.php");
+include_once("/models/product.php");
 
 function product_view($p) {
   return "<div class='content_area product_area'>

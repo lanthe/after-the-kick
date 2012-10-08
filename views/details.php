@@ -1,11 +1,11 @@
 <?php 
 header('Content-type: text/html; charset=utf-8');
 session_start();
-include_once("settings.php");
+include_once("../settings.php");
 include_once("header.php");
 include_once("footer.php");
-include_once("product.php");
-include_once("review.php");
+include_once("../models/product.php");
+include_once("../models/review.php");
 
 echo get_header();  
 
@@ -14,7 +14,7 @@ echo get_header();
 $uri = $_SERVER['REQUEST_URI'];
 $uri = split("/",$uri);
 $details_url = $uri[2];
-$dbh = new PDO("sqlite:data/helloworld3.sqlite", null, null);
+$dbh = new PDO("sqlite:../data/helloworld3.sqlite", null, null);
 
 $whereclause = 'where details_url=\''.$details_url.'\'';
 $stmt = $dbh->prepare("select * from products ".$whereclause);
