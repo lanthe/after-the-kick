@@ -20,7 +20,7 @@ $whereclause = 'where details_url=\''.$details_url.'\'';
 $stmt = $dbh->prepare("select * from products ".$whereclause);
 if ($stmt->execute(array())) {
   $row = $stmt->fetch();
-  $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), sprintf('$%.2f',$row['ks_price']), $row['url'], $row['img_url'], true);
+  $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), sprintf('$%.2f',$row['ks_price']), $row['url'], $row['img_url'], $row['details_url'],true);
 }
 
 $stmt = $dbh->prepare("select * from reviews where product_id=".$p->id);

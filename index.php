@@ -13,7 +13,7 @@ echo type_selector_view();
 
 $dbh = new PDO("sqlite:data/helloworld3.sqlite", null, null);
 
-$whereclause = 'where coolness <> "" and img_url <> "" ';
+$whereclause = 'where coolness <> "" and img_url <> "" and visible=1';
 if (isset($_REQUEST['t'])) {
 	$whereclause .= 'and type="'.mysql_escape_string($_REQUEST['t']).'"';
 }
@@ -22,9 +22,9 @@ $stmt = $dbh->prepare("select * from products ".$whereclause." order by coolness
 if ($stmt->execute(array())) {
   while ($row = $stmt->fetch()) {
   if($row['ASIN'] != "")
-    $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), sprintf('$%.2f',$row['ks_price']), $row['url'], $row['img_url'], true);
+    $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), sprintf('$%.2f',$row['ks_price']), $row['url'], $row['img_url'], $row['details_url'], true);
   else
-    $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), sprintf('$%.2f',$row['ks_price']), $row['url'], $row['img_url'], false);
+    $p = new Product($row['id'],$row['name'], $row['description'], sprintf('$%.2f',$row['price']), sprintf('$%.2f',$row['ks_price']), $row['url'], $row['img_url'], $row['details_url'], false);
       
 
   echo product_view($p);
