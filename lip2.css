@@ -101,14 +101,23 @@ div.product_img {
 
 .details_product_img {
 	display:inline-block;
-	height: 300px;
-	width: 345px;
 	text-align:center;
 	border:solid;
 	border-color:white;
 	margin-right:10px;
 	margin-bottom:18px;
 }
+
+img.details_product_img {
+    max-height: 300px;
+    max-width: 345px;
+}
+
+div.details_product_img {
+    height: 300px;
+    width: 345px;
+}
+
 
 img.product_img {
 	max-height: 250px;
