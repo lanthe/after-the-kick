@@ -79,6 +79,16 @@ div.details_product_info {
 	text-align: left;
 }
 
+div.details_pricing {
+	background-color: #cff;
+	padding:3px;
+	padding-left:8px;
+	padding-right:8px;
+	margin-top:5px;
+	margin-bottom:15px;
+	border-radius: 4px;  /* TODO: need to add all the other browsers' taggies */
+	box-shadow: 0 0 4px #666;
+}
 
 div.product_img,
 div.product_img {
@@ -121,6 +131,25 @@ div.product_description {
 	font-family: Source Sans Pro;
 	height: 50px;
 	font-weight: 300;
+}
+
+a.details_buy_button {
+	background-color: yellow;
+	height: 20px;
+	width: 150px;
+	float: right;
+	text-align: center;
+	padding: 1px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+	font-family: Skranji;
+	text-decoration: none;
+	color: black;
+	margin-top:13px;
+	margin-right:10px;
+}
+
+div.details_price_text_wrapper {
+	display:inline-block;
 }
 
 a.buy_button {

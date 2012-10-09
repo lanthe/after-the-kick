@@ -16,7 +16,6 @@ Transitional//EN\">
 		      type='image/png' 
 		      href='imgs/favicon.ico'>
 	    <link rel='stylesheet' type='text/css' href='/lip2.css'>
-	    <link rel='stylesheet' type='text/css' href='flags.css'>	    
 	    <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.js'></script>
 	    <meta http-equiv='Content-Language' content='en_US' /> 
 		<script type='text/javascript'>
@@ -37,7 +36,14 @@ Transitional//EN\">
 	</head>
 
 	<body>
-
+		<div id='fb-root'></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = '//connect.facebook.net/en_US/all.js#xfbml=1&appId=343797802378971';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
 
 	</body>

@@ -39,17 +39,27 @@ echo "<div class='content_area'>
         <div class='details_product_img'><img class='details_product_img' src=$p->img></img></div>
         <div class='details_product_info'>
           <div class='details_product_name kf_header'>".$p->name."</div>
-		  <div class='deal_text'><div class='ks_price'>$p->ks_price</div> on Kickstarter</div>
-		  <div class='product_price'>".$p->price."</div><div class='website'> via ".$p->website."</div>
-		  <a class='buy_button' href='javascript:void(0)' onclick='recordOutboundProductLink(\"buy_button\",$p->id,\"$p->url\")'>GO</a>
+          <div class='details_pricing'>
+            <div class='details_price_text_wrapper'>
+		     <div class='deal_text'><div class='ks_price'>$p->ks_price</div> on Kickstarter</div>
+		     <div class='product_price'>".$p->price."</div><div class='website'> via ".$p->website."</div>
+            </div>
+		    <a class='details_buy_button' href='javascript:void(0)' onclick='recordOutboundProductLink(\"buy_button\",$p->id,\"$p->url\")'>Check it out</a>
+          </div>
+          <div class='fb-like' data-href='http://kickfollower.com/details/$p->details_url/' data-send='false' data-width='450' data-show-faces='true' data-font='lucida grande'></div>
         </div>
         <div class='details_reviews_area'>
 			<div class='kf_header'>Kickstarter User Comments</div>";
-			foreach ($reviews as $r) {
-			    echo "<div class='review'>";
-				echo "<span class='author kf_normal'>".$r->author.": </span>";
-				echo "<span class='kf_normal'>".$r->text."</span>";
-				echo "</div>";
+			if ($reviews) {
+				foreach ($reviews as $r) {
+				    echo "<div class='review'>";
+					echo "<span class='author kf_normal'>".$r->author.": </span>";
+					echo "<span class='kf_normal'>".$r->text."</span>";
+					echo "</div>";
+				}
+			}
+			else {
+				echo "None yet.";
 			}
 	  echo "</div>";
 echo "</div>";
