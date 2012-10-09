@@ -7,7 +7,7 @@ include_once("footer.php");
 include_once("../models/product.php");
 include_once("../models/review.php");
 
-echo get_header();  
+
 
 //  DB Access
 
@@ -32,6 +32,16 @@ if($stmt->execute(array())) {
 		array_push($reviews,$r);
   }
 }
+
+echo get_header_start();
+echo '
+<meta property="og:title" content="'.$p->name.'" />
+<meta property="og:type" content="product" />
+<meta property="og:url" content="http://kickfollower.com/details/'.$p->details_url.'/" />
+<meta property="og:image" content="'.$p->img.'" />
+<meta property="og:site_name" content="Kickfollower" />
+<meta property="fb:admins" content="703897" />';
+echo get_header_end();
 
 // UI
 

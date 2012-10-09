@@ -1,6 +1,7 @@
 <?php
 include_once("../settings.php");
-function get_header() {
+
+function get_header_start() {
   return "
  	<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
 Transitional//EN\">
@@ -32,10 +33,11 @@ Transitional//EN\">
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 
-		</script>
-	</head>
+		</script>";
+}
 
-	<body>
+function get_header_end() {
+  return "</head><body>
 		<div id='fb-root'></div>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
@@ -57,4 +59,9 @@ Transitional//EN\">
     </div><a class='logo_text'href='/'>".site_name()."</a>".
     "<div class=tagline>Crowd-funded projects that are built and available in stores</div>";
 }
+
+function get_header() {
+	return get_header_start().get_header_end();
+}
+
 ?>
