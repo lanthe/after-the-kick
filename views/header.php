@@ -1,4 +1,5 @@
 <?php
+include_once('../settings.php');
 function get_header_start() {
   return "
  	<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
